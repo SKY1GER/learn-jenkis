@@ -33,7 +33,6 @@ pipeline{
         stage("Test"){
             steps{
                 sh "echo this is bulid"
-                sh "sleep 10"
             }
             
         }
