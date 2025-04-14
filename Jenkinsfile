@@ -53,4 +53,15 @@ pipeline{
             }
         }
     }
+    post{
+        always{
+            echo "this will run always"
+        }
+        success{
+            echo "this will run only if build success"
+        }
+        failure{
+            echo "this will run only if build fails"
+        }
+    }
 }
